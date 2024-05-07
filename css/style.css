@@ -1,0 +1,254 @@
+/* Start Global Rules */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* End Global Rules */
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Tahoma, Arial;
+    background-color: #001e4d;
+  }
+
+
+
+
+  
+.start_btn,
+.info_box,
+.result_box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.info_box.activeInfo{
+    opacity: 1;
+    z-index: 5;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+    display: block;
+}
+
+.start_btn button{
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  font-size: 28px;
+  width: 200px;
+  border: 0;
+  padding: 10px;
+  margin:20px auto 0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.start_btn button:hover{
+  transform: scale(1.2);
+}
+.info_box{
+    width: 540px;
+    background: #fff;
+    border-radius: 5px;
+    transform: translate(-50%, -50%) scale(0.9);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    display: none;
+}
+
+.info_box .info-title{
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    border-radius: 5px 5px 0 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.info_box .info-list{
+    padding: 15px 30px;
+}
+
+.info_box .info-list .info{
+    margin: 5px 0;
+    font-size: 17px;
+}
+
+.info_box .info-list .info span{
+    font-weight: 600;
+    color: #007bff;
+}
+.info_box .buttons{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 30px;
+    border-top: 1px solid lightgrey;
+}
+
+.info_box .buttons button{
+    margin: 0 5px;
+    height: 40px;
+    width: 100px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #007bff;
+    transition: all 0.3s ease;
+}
+
+ .app{
+  background-color: #fff;
+  width: 90%;
+  max-width: 600px;
+  margin: 100px auto 0;
+  border-radius: 15px;
+  padding: 30px;
+  display: none;
+ }
+ @media(max-width:992px){
+  .app{
+  
+    margin-bottom: 10px;
+   }
+ }
+ .app h1 {
+  font-size: 25px;
+  color: #001e4d;
+  font-weight: 600;
+  border-bottom: 1px solid #777 ;
+  padding-bottom: 15px;
+ }
+ .quiz{
+  padding: 20px 0;
+  text-align: center;
+
+ }
+ .quiz h2{
+  font-size: 18px;
+  color: #001e4d;
+ }
+.btn {
+  background-color: #fff;
+  color: #001e4d;
+  font-weight: bold;
+  font-size: 18px;
+  width: 100%;
+  border: 1px solid #222;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.5s;
+ }
+.btn:disabled{
+  cursor: no-drop;
+}
+ #next{
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  width: 150px;
+  border: 0;
+  padding: 10px;
+  margin:20px auto 0;
+  border-radius: 10px;
+  cursor: pointer;
+  display: none;
+  transition: 0.5s;
+ }
+ #next:hover{
+  transform: scale(1.1);
+ }
+ .correct {
+  background-color: #9aeabc;
+ }
+ .incorrect {
+  background-color: #ff9393;
+ }
+ .emoji {
+  font-size: 50px; 
+  animation: bounce 0.5s infinite alternate; 
+  margin-top: 25px;
+ }
+
+@keyframes bounce {
+  from {
+    transform: translateY(0); /* Start position */
+  }
+  to {
+    transform: translateY(-20px); /* End position */
+  }
+}
+footer{
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
