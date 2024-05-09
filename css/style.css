@@ -111,6 +111,7 @@ a:hover {
     pointer-events: none;
     transition: all 0.3s ease;
     display: none;
+    max-width: 100%;
 }
 
 .info_box .info-title{
